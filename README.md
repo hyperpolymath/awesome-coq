@@ -94,7 +94,7 @@ Contributions welcome! Read the [contribution guidelines](https://github.com/coq
 ### Package and Build Management
 
 - [coq_makefile](https://coq.inria.fr/refman/practical-tools/utilities.html) - Build tool distributed with Coq and based on generating a makefile.
-- [Coq Nix Toolbox](https://github.com/coq-community/coq-nix-toolbox) - Nix helper scripts to automate local builds and continuous integration for Coq.
+- [Coq Guix Toolbox](https://github.com/coq-community/coq-guix-toolbox) - Guix helper scripts to automate local builds and continuous integration for Coq.
 - [Coq Package Index](https://coq.inria.fr/opam/www/) - Collection of Coq packages based on opam.
 - [Coq Platform](https://github.com/coq/platform) - Curated collection of packages to support Coq use in industry, education, and research.
 - [coq-community Templates](https://github.com/coq-community/templates) - Templates for generating configuration files for Coq projects.
@@ -103,8 +103,8 @@ Contributions welcome! Read the [contribution guidelines](https://github.com/coq
 - [Docker-MathComp](https://github.com/math-comp/docker-mathcomp) - Docker images for many combinations of versions of Coq and the Mathematical Components library.
 - [Docker-Coq GitHub Action](https://github.com/marketplace/actions/docker-coq-action) - GitHub container action that can be used with Docker-Coq or Docker-MathComp.
 - [Dune](https://dune.build) - Composable and opinionated build system for OCaml and Coq (former jbuilder).
-- [Nix](https://nixos.org/nix/) - Package manager for Linux and other Unix systems, supporting atomic upgrades and rollbacks.
-- [Nix Coq packages](https://search.nixos.org/packages?channel=unstable&query=coqPackages) - Collection of Coq-related packages for Nix.
+- [Guix](https://nixos.org/guix/) - Package manager for Linux and other Unix systems, supporting atomic upgrades and rollbacks.
+- [Guix Coq packages](https://search.nixos.org/packages?channel=unstable&query=coqPackages) - Collection of Coq-related packages for Guix.
 - [opam](https://opam.ocaml.org) - Flexible and Git-friendly package manager for OCaml and Coq with multiple compiler support.
 
 ### Plugins

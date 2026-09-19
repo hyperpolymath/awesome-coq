@@ -30,7 +30,7 @@ jobs:
 
       - name: Deploy to GitHub pages
         if: github.event_name == 'push' && github.ref == 'refs/heads/master'
-        uses: crazy-max/ghaction-github-pages@v4
+        uses: crazy-max/ghaction-github-pages@df5cc2bfa78282ded844b354faee141f06b41865  # v4
         with:
           build_dir: public
           target_branch: gh-pages

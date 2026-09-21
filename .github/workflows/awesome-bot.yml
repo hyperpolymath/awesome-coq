@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: CC0-1.0
-name: Awesome Bot
+name: Link check
 
 on:
   push:
@@ -13,14 +13,16 @@ permissions:
   contents: read
 
 jobs:
-  test:
+  links:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
-    - uses: ruby/setup-ruby@a0102e0972be65f351c307e2d64b9314a57c8073  # v1
-      with:
-        ruby-version: 2.6
-    - name: Install dependencies
-      run: gem install awesome_bot
-    - name: Run Awesome Bot
-      run: awesome_bot README.md --request-delay 0.2 --allow-dupe --allow-redirect --white-list reddit.com,coq.inria.fr,sciencedirect.com
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - name: Check README links
+        uses: lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8 # v2.9.0
+        with:
+          args: >-
+            README.md
+            --exclude-mail
+            --exclude 'reddit\\.com|coq\\.inria\\.fr|sciencedirect\\.com'
+            --accept 200,429
+          fail: true
